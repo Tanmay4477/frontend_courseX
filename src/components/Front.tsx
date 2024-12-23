@@ -1,7 +1,7 @@
 export default function Front() {
     return (
         <div className="text-center text-white pt-16 pb-8">
-            <div className="font-extrabold text-7xl mb-4 font-sans">
+            <div className="font-extrabold lg:text-6xl md:text-6xl text-5xl mb-4 font-sans">
                 <div className="flex justify-center">
                     <div className="text-blue-500 mr-4">100xDevs,</div>
                     <div>because</div>
