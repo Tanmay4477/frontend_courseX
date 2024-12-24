@@ -1,7 +1,7 @@
 import Navbar from "../components/Navbar";
 import Front from "../components/Front";
 import ImageLine from "../components/ImageLine";
-import DownloadAppCard from "../components/DownloadAppCard";
+import CTA from "../components/CTA"
 import Footer from "../components/Footer";
 
 export default function Home() {
@@ -10,7 +10,7 @@ export default function Home() {
       <Navbar />
       <Front />
       <ImageLine />
-      <DownloadAppCard />
+      <CTA />
       <Footer />
     </div>
   );

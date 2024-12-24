@@ -13,11 +13,11 @@ export default function DownloadAppCard() {
             Give yourself the power you deserve with a 100xdevs today!
           </div>
           <div className="mt-4 text-sm flex max-w-[50%] space-x-4">
-            <button className="w-full flex justify-center items-center bg-white place-content-center py-2 rounded-md space-x-1">
+            <button className="w-full flex justify-center items-center bg-white place-content-center rounded-md space-x-1">
               <Download className="text-xs" />
               <div>Download App</div>
             </button>
-            <button className="w-full flex justify-center items-center bg-black text-slate-100 place-content-center py-2 rounded-md space-x-1">
+            <button className="w-full flex justify-center items-center bg-black text-slate-100 place-content-center rounded-md space-x-1">
               <Sparkles className="text-xs" />
               <div className="text-slate-100">Join Now</div>
             </button>

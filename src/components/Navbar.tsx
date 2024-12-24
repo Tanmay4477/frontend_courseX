@@ -4,7 +4,7 @@ import { Moon } from "lucide-react";
 export default function Navbar() {
   return (
     <header className="border-b">
-      <div className="flex justify-between text-neutral-50 container">
+      <div className="flex justify-between text-neutral-50">
         <div className="m-2 text-neutral-50 flex justify-normal">
           <div className="p-2 ml-20">
             <img
@@ -13,7 +13,7 @@ export default function Navbar() {
               className="object-cover rounded-full h-9"
             />
           </div>
-          <div className="text-blue-600 p-2 font-bold text-2xl">100xDevs</div>
+          <div className="text-blue-600 p-2 font-bold text-2xl font-satoshi">100xDevs</div>
         </div>
         <div className="md:flex lg:flex justify-normal m-2 mt-2 hidden ">
           <div className="py-2 px-2 m-2 text-neutral-50 mt-2 ">
