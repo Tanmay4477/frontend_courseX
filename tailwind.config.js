@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        satoshi: ['Satoshi', 'sans-serif']
+        satoshi: ['Satoshi', 'sans']
       },
       animation: {
         marquee: "marquee 80s linear infinite",
