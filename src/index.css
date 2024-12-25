@@ -2,24 +2,41 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  font-family: "DM Sans", serif;
-  font-optical-sizing: auto;
-}
-
 .mask-gradient {
   mask-image: linear-gradient(
     to right,
     rgba(0, 0, 0, 0) 1%,
-    rgba(0, 0, 0, 1) 50%,
+    rgba(255,255,255,1) 25%,
+    rgba(255,255,255,1) 50%,
+    rgba(255,255,255,1) 75%,
     rgba(0, 0, 0, 0) 99%
   );
 }
 
 @font-face {
   font-family: 'Satoshi'; 
-  src: url('./assets/Satoshi.ttf') format('truetype'); 
+  src: url('./assets/Satoshi-Regular.otf') format('opentype'); 
   font-weight: normal; 
   font-style: normal; 
 }
 
+/* @font-face {
+  font-family: 'Satoshi'; 
+  src: url('./assets/Satoshi-Medium.otf') format('opentype'); 
+  font-weight: normal; 
+  font-style: normal; 
+} */
+
+@font-face {
+  font-family: 'Satoshi-Bold'; 
+  src: url('./assets/Satoshi-Bold.otf') format('opentype'); 
+  font-weight: bold; 
+  font-style: normal; 
+}
+
+@font-face {
+  font-family: 'Satoshi-Black'; 
+  src: url('./assets/Satoshi-Black.otf') format('opentype'); 
+  font-weight: black; 
+  font-style: normal; 
+}

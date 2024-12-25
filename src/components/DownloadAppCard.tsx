@@ -6,7 +6,7 @@ export default function DownloadAppCard() {
     <div className="container">
       <div className="rounded-3xl bg-gradient-to-b from-blue-400 to-blue-700 m-8 p-8 relative overflow-hidden h-[75vh] md:h-[45vh]">
         <div className="w-[80%] peer">
-          <div className="text-3xl text-slate-100	font-semibold">
+          <div className="text-3xl text-slate-100	font-satoshiBlack">
             Every developer deserves to be a great engineer, a 100xEngineer!
           </div>
           <div className="text-1xl text-slate-100 pt-2">
