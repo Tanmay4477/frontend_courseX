@@ -2,6 +2,7 @@ import { FaXTwitter } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { CiYoutube } from "react-icons/ci";
+import harkirat from "../../assets/harkirat.jpg"
 
 
 export default function Footer() {
@@ -10,10 +11,10 @@ export default function Footer() {
             <div className="py-10">
                 <div className="">
         
-                    <div className="grid grid-cols-4 gap-y-12 md:grid-cols-3">
-                        <div className="flex justify-normal gap-1 items-center col-span-full">
+                    <div className="grid grid-cols-4 gap-y-12 md:grid-cols-3 md:grid-rows-2 md:justify-items-start md:gap-y-0">
+                        <div className="flex justify-normal gap-1 col-span-full md:col-span-1 md:row-span-1">
                             <div className="">
-                                <img src="https://appx-wsb-gcp.akamai.net.in/subject/2023-01-17-0.17044360120951185.jpg" className="rounded-full h-16 w-16" />
+                                <img src={harkirat} className="rounded-full h-16 w-16" />
                             </div>
                             <div className=" -space-y-2">
                                 <div className="bg-gradient-to-b from-blue-400 to-blue-700 bg-clip-text text-transparent tracking-tighter text-4xl font-satoshiBold ">
@@ -26,7 +27,7 @@ export default function Footer() {
                             
                         </div>
 
-                        <div className="col-span-full ">
+                        <div className="col-span-full md:col-span-1 md:row-span-1 md:row-start-2">
                             <div className="text-[#F9FAFB]">Follow us</div>
                             <div className="flex justify-normal items-center gap-3">
                                 <div className="bg-blue-500/10 text-[#F9FAFB] rounded-lg p-1 text-3xl"><FaXTwitter /></div>
@@ -36,7 +37,7 @@ export default function Footer() {
                             </div>
                         </div>
 
-                        <div className="col-span-full md:col-span-1">
+                        <div className="col-span-full md:col-span-1 md:row-span-1 md:justify-self-center">
                             <div className="flex flex-col gap-2">
                                 <div className="text-[#F9FAFB] tracking-tighter text-lg">100x Links</div>
                                 <div className="flex flex-col gap-1 tracking-tighter">
@@ -46,7 +47,7 @@ export default function Footer() {
                             </div>
                         </div>
 
-                        <div className="col-span-full md:col-span-1">
+                        <div className="col-span-full md:col-span-1 md:row-span-1 md:justify-self-center">
                             <div className="flex flex-col gap-2">
                                 <div className="text-[#F9FAFB] tracking-tighter text-lg">100x Legal</div>
                                 <div className="flex flex-col gap-1 tracking-tighter text-[#BDBEC1]">
