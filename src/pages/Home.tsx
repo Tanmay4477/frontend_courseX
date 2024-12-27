@@ -1,16 +1,9 @@
-import Navbar from "../components/Navbar";
-import Front from "../components/Front";
-import ImageLine from "../components/ImageLine";
-import CTA from "../components/CTA"
-import Footer from "../components/Footer";
+import Footer from "../components/Home/Footer";
+
 
 export default function Home() {
   return (
-    <div className="bg-black font-satoshi">
-      <Navbar />
-      <Front />
-      <ImageLine />
-      <CTA />
+    <div className="px-4 sm:px-8 font-satoshi bg-gradient-to-b from-[black] to-[#141F3A]">
       <Footer />
     </div>
   );
