@@ -9,13 +9,18 @@ export default {
         satoshiBlack: ['Satoshi-Black', 'sans']
       },
       animation: {
-        marquee: "marquee 80s linear infinite",
-        "bounce-slow": "bounce-slow 3s infinite;",
+        marquee: "marquee 45s linear infinite",
+        marquee2: "marquee2 45s linear infinite",
+        "bounce-slow": "bounce-slow 3s infinite ",
       },
       keyframes: {
         marquee: {
           "0%": { transform: "translateX(0)" },
           "100%": { transform: "translateX(-100%)" },
+        },
+        marquee2: {
+          "0%": { transform: "translateX(100%)" },
+          "100%": { transform: "translateX(0%)" },
         },
         "bounce-slow": {
           "0%": {
