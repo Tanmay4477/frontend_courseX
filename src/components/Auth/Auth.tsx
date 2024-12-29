@@ -28,6 +28,7 @@ export default function Auth({ prop }: Props) {
             <button className="rounded-lg bg-gray-500 h-8 w-40 text-center">{prop} as user</button>
         </div>
         <div>Go to {""}</div>
+        <div>Test</div>
       </div>
     </div>
   );
