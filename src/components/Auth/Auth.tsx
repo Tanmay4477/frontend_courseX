@@ -1,12 +1,19 @@
 import { useState } from "react";
 
-interface Props {
-  prop: string;
+export enum AuthType {
+    Signup = "Signup",
+    Signin = "Signin"
 }
 
-export default function Auth({ prop }: Props) {
+interface Props {
+  prop: AuthType
+}
+
+export function Auth({ prop }: Props) {
   const [username, setUsername] = useState("demo123");
   const [password, setPassword] = useState("*******");
+
+  const redirectText: AuthType= (prop === AuthType.Signup) ? AuthType.Signin : AuthType.Signup;
 
   return (
     <div className="bg-black px-4 py-12 max-w-screen-sm mx-auto rounded-lg">
@@ -27,8 +34,7 @@ export default function Auth({ prop }: Props) {
             <button className="rounded-lg bg-gray-500 h-8 w-40 text-center">{prop} as admin</button>
             <button className="rounded-lg bg-gray-500 h-8 w-40 text-center">{prop} as user</button>
         </div>
-        <div>Go to {""}</div>
-        <div>Test</div>
+        <div className="underline">Go to {redirectText} Page</div>
       </div>
     </div>
   );
