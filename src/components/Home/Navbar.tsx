@@ -4,8 +4,8 @@ import { FiMoon } from "react-icons/fi";
 
 export default function Navbar() {
     return (
-        <div className="">
-            <div className="border-b-0 border-white/80 flex justify-between items-center py-3">
+        <header className="sticky top-0 z-50 bg-black">
+            <div className="border-b border-[#b3b3b3] border-opacity-30 flex justify-between items-center py-3">
                 <div className="flex justify-normal items-center gap-2">
                     <div><img src={harkirat} alt="100x devs logo" className="size-12 rounded-full"/></div>
                     <div className="font-satoshiBold bg-gradient-to-b from-blue-400 to-blue-700 text-transparent bg-clip-text text-2xl">100xDevs</div>
@@ -18,6 +18,6 @@ export default function Navbar() {
                     </div>
                 </div>
             </div>
-        </div>
+        </header>
     )
 }

@@ -5,8 +5,8 @@ import { LuSparkles } from "react-icons/lu";
 
 export default function CTA() {
     return (
-        <div>
-            <div className="rounded-[24px] bg-gradient-to-b from-[#5CA2F8] to-[#1F4FD8]">
+        <div className="py-8 border-b border-white border-opacity-20">
+            <div className="rounded-[24px] bg-gradient-to-b from-[#5CA2F8] to-[#1F4FD8] ">
                 <div className="p-8 max-h-[565px] overflow-hidden md:max-h-[325px]">
                     <div className="grid gap-3 md:grid-cols-3 md:justify-items-start h-screen">
                         <div className="md:col-span-2 md:col-start-1 flex flex-col gap-3" >
