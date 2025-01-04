@@ -1,9 +1,22 @@
-// import CourseComponent  from "../components/Course/CourseComponent";
 import axios from "axios";
 import { useEffect, useState } from "react";
+import CourseComponent from "../components/Course/CourseComponent";
+
+interface CourseType {
+        "_id": string,
+        "adminId": string,
+        "users": string[],
+        "title": string,
+        "description": string,
+        "price": number,
+        "imageUrl": string,
+        "videoUrls": string[],
+        "createdAt": string,
+        "updatedAt": string,
+    }
 
 export const Courses = () => {
-    const [courses, setCourses] = useState("");
+    const [courses, setCourses] = useState<CourseType[]>();
 
     useEffect(() => {
         const fetch = async() => {
@@ -12,10 +25,13 @@ export const Courses = () => {
             setCourses(response.data.data);
         }
         fetch();
-    }, [courses])
+    }, [])
+
     return (
-        <div className="">
-            {/* <CourseComponent /> */}
+        <div className="bg-black flex justify-normal gap-2">
+            {courses?.map((course) => (
+                <CourseComponent title={course.title} imageUrl={course.imageUrl} price={course.price} />
+            ))}
         </div>
     )
 }

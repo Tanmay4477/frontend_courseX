@@ -1,7 +1,9 @@
+import { AddCourseForm } from "../components/Admin/AddCourseForm";
+
 export default function AddCourse() {
     return (
         <div>
-            this is a add course div
+            <AddCourseForm />
         </div>
     )
 }

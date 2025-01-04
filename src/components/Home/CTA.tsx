@@ -4,6 +4,7 @@ import { LuSparkles } from "react-icons/lu";
 
 
 export default function CTA() {
+    
     return (
         <div className="py-8 border-b border-white border-opacity-20">
             <div className="rounded-[24px] bg-gradient-to-b from-[#5CA2F8] to-[#1F4FD8] ">
