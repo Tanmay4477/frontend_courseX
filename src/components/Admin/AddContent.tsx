@@ -28,7 +28,7 @@ export const AddContent = () => {
     }
 
     return (
-        <form className="border mx-auto max-w-md shadow-lg p-4 flex flex-col gap-2" onSubmit={SubmitForm}>
+        <form className="border mx-auto max-w-md shadow-lg p-4 flex flex-col gap-2 bg-white" onSubmit={SubmitForm}>
             <div className="text-2xl font-bold text-center">Add Content</div>
             <div>
                 <label className="block">Add Video Url </label>

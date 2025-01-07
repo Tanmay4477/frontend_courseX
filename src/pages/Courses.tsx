@@ -2,7 +2,7 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import CourseComponent from "../components/Course/CourseComponent";
 
-interface CourseType {
+export interface CourseType {
         "_id": string,
         "adminId": string,
         "users": string[],
@@ -30,7 +30,7 @@ export const Courses = () => {
     return (
         <div className="bg-black flex justify-normal gap-2">
             {courses?.map((course) => (
-                <CourseComponent title={course.title} imageUrl={course.imageUrl} price={course.price} />
+                <div key={course._id}><CourseComponent id={course._id} title={course.title} imageUrl={course.imageUrl} price={course.price} /></div>
             ))}
         </div>
     )

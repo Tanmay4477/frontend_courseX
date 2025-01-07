@@ -6,10 +6,8 @@ export default function Course() {
     if(!id) return;
     
     return (
-        <div>
-            <div>
+        <div className="flex justify-center">
                 <SingleCourse id={id} />
-            </div>
         </div>
     )
 }

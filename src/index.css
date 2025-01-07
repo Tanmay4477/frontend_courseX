@@ -13,6 +13,10 @@
   );
 }
 
+body {
+  background-color: black;
+}
+
 @font-face {
   font-family: 'Satoshi'; 
   src: url('./assets/Satoshi-Regular.otf') format('opentype'); 

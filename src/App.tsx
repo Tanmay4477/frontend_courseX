@@ -7,6 +7,8 @@ import Purchased from "./pages/Purchased";
 import Course from "./pages/Course";
 import AddCourse from "./pages/AddCourse";
 import EditCourse from "./pages/EditCourse";
+import dotenv from 'dotenv';
+dotenv.config();
 
 function App() {
 

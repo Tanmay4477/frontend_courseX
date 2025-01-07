@@ -1,11 +1,21 @@
+import { useNavigate } from "react-router-dom"
+
 interface propsType {
+    id: string,
     title: string,
     imageUrl: string,
     price: number,
 }
 
 
-export default function CourseComponent({title, imageUrl, price}:propsType) {
+export default function CourseComponent({id, title, imageUrl, price}:propsType) {
+
+    let navigate = useNavigate();
+
+    const handleClick = () => {
+        console.log(id)
+        navigate(`/course/${id}`)
+    }
     return (
         <div className="bg-white max-w-sm rounded-lg flex flex-col p-2 border-2 border-indigo-500">
             <div className="">
@@ -17,7 +27,7 @@ export default function CourseComponent({title, imageUrl, price}:propsType) {
                 <div className="text-green-400">69.69% off</div>
             </div>
             <div className="flex bg-blue-500 h-10 max-w-36 rounded-lg justify-center items-center content-center self-center">
-                <div className="px-5 py-4 text-white text-center" >View Details</div>
+                <button onClick={handleClick} className="px-5 py-4 text-white text-center" >View Details</button>
             </div>
         </div>
     )
