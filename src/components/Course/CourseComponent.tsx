@@ -16,6 +16,7 @@ export default function CourseComponent({id, title, imageUrl, price}:propsType) 
         console.log(id)
         navigate(`/course/${id}`)
     }
+    console.log("")
     return (
         <div className="bg-white max-w-sm rounded-lg flex flex-col p-2 border-2 border-indigo-500">
             <div className="">
