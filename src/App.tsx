@@ -7,6 +7,8 @@ import Purchased from "./pages/Purchased";
 import Course from "./pages/Course";
 import AddCourse from "./pages/AddCourse";
 import EditCourse from "./pages/EditCourse";
+import { LoginComponent } from "./components/ui/loginComponent";
+import Navbar from "./components/ui/navbar";
 
 function App() {
   return (
@@ -20,7 +22,11 @@ function App() {
         <Route path="/course/:id" element={<Course />} />
         <Route path="/course/add" element={<AddCourse />} />
         <Route path="/course/edit/:id" element={<EditCourse />} />
-        
+
+
+        <Route path="/component" element={<LoginComponent buttonName="Login"/>} />
+        <Route path="/navbar" element={<Navbar />} />
+
       </Routes>
     </BrowserRouter>
   )

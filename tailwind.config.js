@@ -1,8 +1,12 @@
 /** @type {import('tailwindcss').Config} */
 export default {
+  darkMode: ['selector', '[data-mode="dark"]'],
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      backgroundImage: {
+        'primary': 'linear-gradient(to bottom, #60a5fa, #2563eb)'
+      },
       fontFamily: {
         satoshi: ['Satoshi', 'sans'],
         satoshiBold: ['Satoshi-Bold', 'sans'],
