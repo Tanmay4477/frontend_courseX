@@ -1,5 +1,5 @@
 import { createContext, useState, useContext } from "react";
-import { useLocation, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 interface TopBarInterface {
     animate: boolean
@@ -12,11 +12,10 @@ export const SpeedAnimationContext = createContext<TopBarInterface | null>(null)
 export const SpeedAnimationProvider = ({children}: {children: React.ReactNode}) => {
     const [ animate, setAnimate ] = useState<boolean>(false);
     const navigate = useNavigate();
-    const location = useLocation();
 
     const animateHandler = () => {
         setAnimate(true)
-        navigate(location.pathname, { replace: true });
+        navigate("/", { replace: true });
         setTimeout(() => {
             setAnimate(false);
         }, 200)

@@ -1,7 +1,10 @@
+import { HomeLayout } from "@/Layout/HomeLayout";
+import NotFoundUI from "@/ui/NotFound";
+
 export default function NotFound() {
     return (
-        <div>
-            not found page
-        </div>
+        <HomeLayout>
+            <NotFoundUI />
+        </HomeLayout>
     )
 }

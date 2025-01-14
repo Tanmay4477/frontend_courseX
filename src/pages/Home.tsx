@@ -1,13 +1,17 @@
-import Navbar from "@/components/HomePage/Navbar"
-import { SpeedAnimationProvider } from "@/context/SpeedAnimation"
+import {Marquee} from "@/components/HomePage/Marquee"
+import { HeroSection } from "@/components/HomePage/HeroSection"
+import { CTASection } from "@/components/HomePage/CTASection"
+import Footer from "@/components/HomePage/Footer"
 import { HomeLayout } from "@/Layout/HomeLayout"
+
 
 export default function Home() {
     return (
-            <SpeedAnimationProvider>
-                <HomeLayout>
-                    <Navbar />
-                </HomeLayout>
-            </SpeedAnimationProvider>
+        <HomeLayout>           
+            <HeroSection />
+            <Marquee />
+            <CTASection />
+            <Footer />
+        </HomeLayout>
     )
 }

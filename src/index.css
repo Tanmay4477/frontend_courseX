@@ -13,11 +13,6 @@
   );
 }
 
-body {
-  background-color: black;
-  color: white;
-}
-
 #nprogress .bar {
   background: #29d;
   height: 4px;
