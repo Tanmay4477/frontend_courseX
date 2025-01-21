@@ -4,6 +4,9 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      screens: {
+        'xs': '396px'
+      },
       backgroundImage: {
         'primary': 'linear-gradient(to bottom, #60a5fa, #2563eb)'
       },

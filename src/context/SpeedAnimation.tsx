@@ -15,7 +15,7 @@ export const SpeedAnimationProvider = ({children}: {children: React.ReactNode}) 
 
     const animateHandler = () => {
         setAnimate(true)
-        navigate("/", { replace: true });
+        navigate(0);
         setTimeout(() => {
             setAnimate(false);
         }, 200)
