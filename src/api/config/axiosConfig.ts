@@ -10,7 +10,7 @@ const errorHandler = (error: AxiosError) => {
     const statusCode = error.response?.status;
     const navigate = useNavigate();
 
-    if(statusCode && statusCode === 401 ) {
+    if(statusCode === 401 ) {
         navigate("/signin");
     }
     else {

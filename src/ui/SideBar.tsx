@@ -19,7 +19,7 @@ export default function SideBar() {
                 initial={false}
                 animate={{x: isMenuOpen ? "0%" : "0%"}}
                 transition={{duration:1, ease:easeInOut}}
-                className={`hidden fixed top-0 left-0 border-r lg:block h-screen  ${isMenuOpen ? "w-64" : "w-20"}`}>
+                className={`hidden fixed top-0 left-0 border-r lg:block h-screen  ${isMenuOpen ? "w-64" : "w-20"} z-50 bg-white dark:bg-black`}>
                 <div className={`flex flex-col gap-10 tracking-tight text-2xl p-5`}>
                     <div className="flex flex-col gap-10">
                         <div className="text-2xl tracking-tighter flex justify-start gap-2">

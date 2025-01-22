@@ -16,7 +16,7 @@ const AuthLayout = ({children}: {children: React.ReactNode}) => {
       }, [theme]);
       
     return (
-        <div className="px-4 sm:px-8 md:px-20 min-h-screen bg-white text-black dark:bg-black dark:text-white">
+        <div className="px-4 sm:px-8 md:px-12 lg:px-20 min-h-screen bg-white text-black dark:bg-black dark:text-white">
             <SpeedAnimationProvider>
                 <SideBar />
                 {children}
