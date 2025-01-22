@@ -1,7 +1,7 @@
 import { createContext, useState, useContext } from "react";
 import { AuthContextType, User } from "@/interfaces/AuthInterface"
 import UserAPI from "@/api/UserAPI";
-import { Navigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 
 export const AuthContext = createContext<AuthContextType | null>(null);
 
@@ -16,8 +16,8 @@ export const AuthProvider = ({ children }: { children: React.ReactNode}) => {
     const logout = async() => {
         try {
             setData(null);
-            UserAPI.logout();
-            <Navigate to="/signin" />
+            const data = await UserAPI.logout();
+            console.log(data);
     } catch (error){
             console.log("Error occur in logging you out", error);
         }

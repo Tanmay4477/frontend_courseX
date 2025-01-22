@@ -37,7 +37,7 @@ export const AuthPageUI: React.FC<LoginComponentProps> = ({buttonName}) => {
             console.log(response);
             toast.success("Signed in");
             await new Promise((resolve) => setTimeout(resolve, 1500));
-            navigate("/");
+            navigate("/dashboard");
         } catch (error) {
             console.log(error);
             toast.error("Invalid credentials, try again!")

@@ -5,10 +5,9 @@ import { Navigate, Outlet } from "react-router-dom";
 
 export default function Protected() {
     const {data, login} = useAuthContext();
-    const [ isLoading, setIsLoading ] = useState<boolean>(false);
+    const [ isLoading, setIsLoading ] = useState<boolean>(true);
 
     const verifyCookies = async () => {
-        setIsLoading(true); 
         try {
             const response = await UserAPI.verifyCookie(); 
             if(response.data.valid === true && response.status === 200){
@@ -18,12 +17,10 @@ export default function Protected() {
                 login(userData);
             } 
             else {
-                <Navigate to="/signin" />
+                setIsLoading(false);
             }
         } catch (error) {
             console.log(error);
-            <Navigate to="/signin"/>
-        } finally {
             setIsLoading(false);
         }
     }
@@ -37,16 +34,20 @@ export default function Protected() {
         }
     }, [data])
 
-    useEffect(() => {
-        if(!isLoading && !data) {
-            <Navigate to="/signin" />
-        }
-    }, [isLoading, data])
+    // useEffect(() => {
+    //     if(!isLoading && !data) {
+    //         <Navigate to="/signin" />
+    //     }
+    // }, [isLoading, data])
 
     if (isLoading) {
         return (
             <div>Loading...</div>
         )
+    }
+
+    if(!data) {
+        return <Navigate to="signin" />
     }
 
     return <Outlet />    
