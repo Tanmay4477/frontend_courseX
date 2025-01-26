@@ -1,6 +1,6 @@
 import harkirat from "@/assets/harkirat.jpg";
 import { FiMoon } from "react-icons/fi";
-import { IoReorderThreeSharp } from "react-icons/io5";
+// import { IoReorderThreeSharp } from "react-icons/io5";
 import { useSpeedAnimate } from "@/context/SpeedAnimation";
 import { IoSunnyOutline } from "react-icons/io5";
 import { motion } from "framer-motion";
@@ -32,15 +32,15 @@ export const NavbarUI: React.FC<NavigateNavbar> = ({navigateToLogin, navigateToS
                 <div className="flex justify-normal items-center gap-4">
                     <FiMoon onClick={toggleTheme} className="text-2xl hover:text-blue-500 hidden dark:block"/>
                     <IoSunnyOutline onClick={toggleTheme} className="text-2xl hover:text-blue-500 dark:hidden"/>
-                    <div className="hidden sm:block">
+                    <div className="">
                         <div className="flex justify-normal items-center gap-2">
                             <button onClick={navigateToLogin} className="rounded-lg bg-black dark:bg-white px-4 py-2 text-sm text-white dark:text-black">Login</button>
                             <button onClick={navigateToSignup} className="bg-gradient-to-b from-blue-400 to-blue-700 rounded-lg px-4 py-2 text-sm text-white">Join Now</button>
                         </div>
                     </div>
-                    <div className="sm:hidden">
+                    {/* <div className="sm:hidden">
                         <IoReorderThreeSharp className="text-4xl hover:text-blue-500" />
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </header>
