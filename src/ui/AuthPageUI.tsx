@@ -15,7 +15,7 @@ export const AuthPageUI: React.FC<LoginComponentProps> = ({buttonName}) => {
     const [showPassword , setShowPassword] = useState(true);
     const navigate = useNavigate();
 
-    const { register, handleSubmit, formState: { errors }, trigger, reset } = useForm<LoginFormData>({
+    const { register, handleSubmit, formState: { errors }, trigger } = useForm<LoginFormData>({
         resolver: zodResolver(schema),
     });
 
